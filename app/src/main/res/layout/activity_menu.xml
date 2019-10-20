@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/fundo_menu"
+  tools:context=".view.activity.MenuActivity">
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:id="@+id/boasVindasMenu"
+    android:textSize="24sp"
+    android:textColor="#ffffff"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:text="Boas vindas! \n Para aonde iremos hoje, explorador?"
+    android:textAlignment="center"
+    app:layout_constraintTop_toTopOf="parent">
+
+  </TextView>
+
+  <ImageView
+    android:id="@+id/right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_chevron_right_black_24dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+  </ImageView>
+  <androidx.viewpager.widget.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/viewPagerMain"
+    android:layout_marginTop="8dp"
+    app:layout_constraintStart_toEndOf="@id/left"
+    app:layout_constraintEnd_toStartOf="@id/right"
+    app:layout_constraintTop_toBottomOf="@+id/boasVindasMenu" />
+
+  <ImageView
+    android:id="@+id/left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_chevron_left_black_24dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

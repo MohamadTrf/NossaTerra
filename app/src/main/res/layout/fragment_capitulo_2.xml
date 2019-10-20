@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/era"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Éon Hadeano"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="18sp"
+    app:layout_constraintTop_toTopOf="parent">
+
+  </TextView>
+
+  <ImageView
+    android:id="@+id/mapa"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/fundo_capitulo2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/era">
+
+  </ImageView>
+
+  <TextView
+    android:id="@+id/capitulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Capítulo 2"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/mapa">
+
+  </TextView>
+
+  <TextView
+    android:id="@+id/capituloTitulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="Vulcões e Tremores"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="24sp"
+    app:layout_constraintTop_toBottomOf="@id/capitulo">
+
+  </TextView>
+
+  <ImageView
+    android:id="@+id/warning"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginTop="80dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_lock_outline_black_24dp" />
+
+  <TextView
+    android:id="@+id/textWarning"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Esse capítulo ainda não está\ndisponível.\n
+  Jogue o capítulo 1 para\n desbloquear."
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="@+id/mapa"
+    app:layout_constraintStart_toStartOf="@+id/mapa"
+    app:layout_constraintTop_toBottomOf="@+id/warning">
+
+  </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

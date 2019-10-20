@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+      android:id="@+id/era"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Antes de tudo"
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="18sp"
+      app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+      android:id="@+id/mapa"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/fundo_capitulo1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/era">
+
+    </ImageView>
+
+    <TextView
+      android:id="@+id/capitulo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Capítulo 1"
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintTop_toBottomOf="@id/mapa">
+
+    </TextView>
+
+    <TextView
+      android:id="@+id/capituloTitulo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Na explosão, a Terra e a Lua se conhecem"
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="24sp"
+      app:layout_constraintTop_toBottomOf="@id/capitulo">
+
+    </TextView>
+
+    <ImageView
+      android:id="@+id/warning"
+      android:layout_width="90dp"
+      android:layout_height="90dp"
+      app:layout_constraintBottom_toBottomOf="@+id/mapa"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/mapa"
+      app:srcCompat="@drawable/ic_danger" />
+
+    <TextView
+      android:id="@+id/textWarning"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Ops!\nEstamos em manutenção."
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="@+id/mapa"
+      app:layout_constraintStart_toStartOf="@+id/mapa"
+      app:layout_constraintTop_toBottomOf="@+id/warning">
+
+    </TextView>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

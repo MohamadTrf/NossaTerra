@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/era"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Era Cenozoica"
+    android:textSize="18sp"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    app:layout_constraintTop_toTopOf="parent">
+
+  </TextView>
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:id="@+id/mapa"
+    android:background="@drawable/fundo_capitulo8"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/era">
+
+  </ImageView>
+
+  <TextView
+    android:id="@+id/capitulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Capítulo 8"
+    android:textSize="24sp"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:layout_marginTop="16dp"
+    android:textColor="#ffffff"
+    app:layout_constraintTop_toBottomOf="@id/mapa">
+
+  </TextView>
+
+  <TextView
+    android:id="@+id/capituloTitulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="E nós evoluímos"
+    android:textSize="24sp"
+    android:textAlignment="center"
+    android:layout_marginTop="8dp"
+    android:textColor="#ffffff"
+    app:layout_constraintTop_toBottomOf="@id/capitulo">
+
+  </TextView>
+
+  <ImageView
+    android:id="@+id/warning"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    app:layout_constraintBottom_toBottomOf="@+id/mapa"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/mapa"
+    app:srcCompat="@drawable/ic_play_button" />
+
+  <TextView
+    android:id="@+id/textWarning"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Jogar"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="@+id/mapa"
+    app:layout_constraintStart_toStartOf="@+id/mapa"
+    app:layout_constraintTop_toBottomOf="@+id/warning">
+
+  </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
